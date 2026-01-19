@@ -14,9 +14,9 @@ from telethon import TelegramClient, functions, errors
 
 # ⚙️ НАЛАШТУВАННЯ (SYSTEM CONFIG)
 
-API_ID = 35585375
-API_HASH = '45e55967edc445a8adf07d2b140a057a'
-BOT_TOKEN = "8425642763:AAF4NMS65S6sLXAw4fKj1t3HSYqJnIKLyA8"
+API_ID = api_id
+API_HASH = 'api_hash'
+BOT_TOKEN = "Ur_api"
 
 DB_FILE = "titanium_final.json"
 SESSION_NAME = "titanium_session"
@@ -541,4 +541,5 @@ async def scanner_engine():
 if __name__ == "__main__":
     asyncio.set_event_loop(loop)
     threading.Thread(target=bot.infinity_polling).start()
+
     loop.run_until_complete(scanner_engine())
